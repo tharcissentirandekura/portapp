@@ -1,0 +1,30 @@
+
+{% extends "tharack/layout.html" %}
+{%load static%}
+{% block body %}
+    <link rel="stylesheet" href="{% static 'tharack/files/home.css' %}">
+    <section class="identify">
+        <div>
+            <h1>My name is Tharcisse</h1>
+            <h2></h2>
+        </div>
+        <div class="image">
+            <img src="{% static 'tharack/images/myimage.jpeg' %}">
+        </div>
+    </section>
+
+    <section class="follow">
+        <span class="fa fa-facebook"></span>
+        <span class="fa fa-instagram"></span>
+        <span class="fa fa-github"></span>
+        <span class="fa fa-linkedin"></span>
+    </section>
+
+    <style>
+        .follow{
+            position: absolute;
+            bottom: 40%;
+            left: 10%;
+        }
+    </style>
+{% endblock body %}

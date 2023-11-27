@@ -1,0 +1,49 @@
+
+body{
+    background-color: rgb(2, 2, 2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.nav-bar{
+    background-color: rgb(19, 22, 22);
+    display: block;
+    overflow: hidden;
+}
+.nav-bar li{
+    display: inline-block;
+    position: relative;
+    float: right;
+    padding: 40px;
+
+}
+.nav-bar li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(42, 169, 174);
+}
+li:hover{
+    text-decoration: underline;
+    color: aqua;
+    font-size: 20px;
+}
+h1{
+    position: relative;
+    font-size: 40px;
+    justify-content: center;
+    color: rgb(224, 228, 220);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 4em 5em;
+}
+h2{
+    position: relative;
+    font-size: 30px;
+    justify-content: center;
+    color: rgb(208, 107, 11);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom: 120px;
+    margin: 2em 6em; 
+}
+

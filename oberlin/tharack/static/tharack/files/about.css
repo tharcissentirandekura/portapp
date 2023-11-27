@@ -1,0 +1,65 @@
+body{
+
+}
+
+.identify .hobby{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.biography{
+    position: relative;
+    font-size: 18px;
+    background-color:rgb(15, 2, 2); 
+    color: rgb(117, 123, 124);
+    widows: 40%;
+    position: absolute; 
+    padding: 1% 10px 10px 10px;
+    top: 20%;
+    border-radius: 10px;
+    height: auto;
+    left: 4%; 
+    right: 50%;
+    float: left;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 2em;
+}
+.about-me{
+    position: relative;
+    border-radius: 3em;
+    margin: 20px 10px 10px 10px;
+    text-align: justify;
+    word-break: break-all;
+}
+.biography img{
+    position: relative;
+    display: grid;
+    height:20em;
+    /* height:auto; */
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 10em;
+    left: 18%;
+    justify-content: center;
+    align-items:center;
+}
+
+.hobby {
+    background-color:rgb(15, 2, 2); 
+    position: relative;
+    float:right;
+    display: grid;
+    height:auto;
+    width: auto;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 10px;
+    right: 4%;
+    justify-content: center;
+    align-items:center;
+    top: 5em; 
+
+
+
+}
