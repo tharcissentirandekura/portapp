@@ -1,0 +1,50 @@
+body{
+    font-size: 18px;
+
+    
+}
+.intro,.footer{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    
+}
+h1{
+    
+    text-shadow: rgb(0, 204, 255) 2px 5px;
+    text-decoration: dashed;
+    color: white;
+}
+.project{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.project p{
+    position: relative;
+    padding: 20px 20px 40px 40px;
+    background-color: rgb(14, 12, 20);
+    width: 20%;
+    border-radius: 8px;
+
+}
+
+p{
+    display: inline-block;
+    padding-left: 20px;
+
+}
+p:hover{
+    color: burlywood;
+}
+img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 5%;
+}
+img:hover{
+    height: 10px;
+    transition: 5.30s;
+}
