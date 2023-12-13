@@ -1,22 +1,121 @@
 body{
-    font-size: 24px;
+    font-size: 14px;
 }
 .identify{
     display: flex;
     flex-wrap: wrap;
 
 }
+
+h1:hover{
+    position : relative;
+    font-size : 40px;
+    color: blue;
+
+    }
 img{
 
     position: relative;
     float: right;
     border-radius: 50px;
-    left: 60%;
+    left: 30%;
 }
 
 .follow{
     position: absolute;
     display: inline-block;
-    bottom: 40%;
+    padding: 1px;
+    word-spacing : 30px;
+    bottom: 30%;
     left: 10%;
+    font-size : 50px;
+    color : black;
 }
+
+.follow:hover{
+    font-size : 56px;
+    transition : .5s;
+    text-decoration : underscore;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+    color : aqua;
+    font-size : 27px;
+    transition : .7s;
+}
+
+
+@media screen and (max-width :800px) {
+    .body{
+        position : relative;
+        font-size: 10px;
+        height : auto;
+    }
+
+    h1{
+        position : relative;
+    }
+    h2{
+        position : relative;
+        top : 2em;
+    }
+
+    img{
+
+        position:relative;
+        top: 2em;
+        border-radius: 14em;
+        height : 24em;
+        left : 0;
+        width :24em;
+        box-shadow: 8px 8px 8px 8px rgba(0, 0, 255, .6);
+
+    }
+
+    .follow{
+        position: absolute;
+        display: inline-block;
+        bottom: 3%;
+        left: 10%;
+        font-size : 28px;
+        word-spacing : 30px;
+        padding : 10px 20px;
+        border-style : solid;
+    }
+
+}
+
+@media screen and (min-width :800px) {
+    .body{
+        font-size: 10px;
+    }
+    h1{
+        position : relative;
+        left :0;
+    }
+    h2{
+        position : relative;
+        left :1em;
+    }
+
+    img{
+        position:relative;
+        justify-content : center;
+        align-items : center;
+        border-radius: 2em;
+        color :;
+        border-style : solid;
+        height : 40em;
+        width :35em;
+        right : 2em;
+        top : 4em;
+        box-shadow: 8px 8px 8px 8px rgba(0, 0, 255, .6);
+
+    }
+
+}
+
