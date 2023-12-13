@@ -132,9 +132,8 @@ h2{
     }
 
     .nav-bar:hover{
-        background-color : white;
         font-size : 20px;
-        transition : 0.5s;
+        /* transition : 0.5s; */
         text-decoration: none;
         padding : 2px;
         border-radius : 2px;
