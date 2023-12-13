@@ -24,10 +24,15 @@ h1{
 .project p{
     position: relative;
     padding: 20px 20px 40px 40px;
-    background-color: rgb(14, 12, 20);
+    background-color: rgb(16, 10, 33);
     width: 20%;
     border-radius: 8px;
 
+}
+.project span{
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px;
 }
 
 p{
