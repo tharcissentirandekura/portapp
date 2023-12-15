@@ -21,11 +21,16 @@
         <li id="portfolio"><a href="{% url 'tharack:portfolio' %}">porfolio</a></li>
         <li id="resume"><a href="">resume</a></li>
         <li id="contact"><a href="{% url 'tharack:contact' %}">contact</a></li>
+        <li id="back"><a href=""><i class="fa fa-toggle-on"></i>background</a></li>
+        
+
         </ul>
 
     </section>
+    <script src="{% static 'tharack/backend/index.js' %}"></script>
 
     {% block body %}
     {% endblock  %}
+
 </body>
 </html>
