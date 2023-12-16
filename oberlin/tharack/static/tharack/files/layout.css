@@ -115,6 +115,10 @@ h2{
 
     }
  }
+ #back{
+    float: right;
+    margin-right: 50px;
+ }
 
 @media screen and (min-width :800px) {
 

@@ -104,6 +104,16 @@ body{
     }
     .about-me{
         position : relative;
+        font-size: 26px;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    span{
+        color: rgb(0, 157, 255);
+        font-size: 27px;
+    }
+    .language{
+        color: rgb(43, 226, 116);
     }
 
 
