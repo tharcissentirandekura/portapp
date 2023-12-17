@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personal portfolio</title>
     <!--<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>-->
+    <script src="{% static 'tharack/backend/index.js' %}"></script>
+
     <link rel="stylesheet" href="{% static 'tharack/files/layout.css' %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,10 +30,9 @@
         <span id='show' onclick="toggles()" class="fa fa-bars"></span>
         <span id="backs" onclick="change()" class="fa fa-toggle-on"></span>
     </div>
-    <script src="{% static 'tharack/backend/index.js' %}"></script>
 
     {% block body %}
-    
+
     {% endblock  %}
 
 </body>
