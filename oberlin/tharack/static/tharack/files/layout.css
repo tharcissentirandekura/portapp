@@ -120,6 +120,8 @@ body {
     }
   }
   
+
+
   @media screen and (min-width: 800px) {
     .nav-bar li a {
       position: relative;

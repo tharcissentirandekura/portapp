@@ -22,7 +22,7 @@ def resume(request):
         code = qrcode(data=data)
         qr.save(code.image.path, kind='png')
         code.save()
-
+        print(code)
         # Redirect to QR code detail page
         return redirect('qrcode_detail', pk=code.pk)
 
