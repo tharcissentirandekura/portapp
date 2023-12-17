@@ -1,7 +1,6 @@
-from django.shortcuts import render
-# Create your views here.
-
+from django.shortcuts import render,redirect
 import segno
+from .models import qrcode
 
 def home(request):
     return render(request,"tharack/home.html")
@@ -12,11 +11,22 @@ def contact(request):
 
 def portfolio(request):
     return render(request,"tharack/portfolio.html")
-def generate(request):
-    code = segno.make_qr('Burundi')
-    image = code.save("tharack/files/images/image.png",scale = 5)
-    print(image)
-    return render(request,"tharack/resume.html",{
-        'image':image
-    })
+def resume(request):
+    if request.method == 'POST':
+        data = request.POST['data']
+
+        # Generate QR code
+        qr = segno.make(data)
+
+        # Save QR code image to model
+        code = qrcode(data=data)
+        qr.save(code.image.path, kind='png')
+        code.save()
+
+        # Redirect to QR code detail page
+        return redirect('qrcode_detail', pk=code.pk)
+
+    return render(request, 'tharack/resume.html')
+
+    
     

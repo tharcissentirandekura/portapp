@@ -4,7 +4,8 @@
 {% block body %}
     <link rel="stylesheet" href="{% static 'tharack/files/resume.css' %}">
     <section class="resume">
-        <img src="{{image}}">
+        <img src="{{ qrcode.image.url }}">
+        <p>Data: {{ qrcode.data }}</p>
     </section>
 
 {% endblock body %}
