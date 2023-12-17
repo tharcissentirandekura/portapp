@@ -51,12 +51,12 @@ body {
     bottom: 120px;
     margin: 2em 6em;
   }
-  span {
+  .menue{
     display: block;
     position: relative;
     float: right;
     margin-right: 50px;
-    font-size: 30px;
+    font-size: 40px;
     /*   bottom:50px; */
   }
   span:hover {

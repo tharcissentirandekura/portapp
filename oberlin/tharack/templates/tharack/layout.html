@@ -20,22 +20,18 @@
         <li class="about"><a href="{% url 'tharack:about' %}">about</a></li>
         <li id="portfolio"><a href="{% url 'tharack:portfolio' %}">porfolio</a></li>
         <li id="resume"><a href="">resume</a></li>
-        <li id="contact"><a href="{% url 'tharack:contact' %}">contact</a></li>
-        <span id="backs"onclick = "change()" class="fa fa-toggle-on"></span>
-        
-
+        <li id="contact"><a href="{% url 'tharack:contact' %}">contact</a></li>        
         </ul>
-
     </section>
 
-    </section>
-    <div class="menu">
+    <div class="menue">
         <span id='show' onclick="toggles()" class="fa fa-bars"></span>
         <span id="backs" onclick="change()" class="fa fa-toggle-on"></span>
     </div>
     <script src="{% static 'tharack/backend/index.js' %}"></script>
 
     {% block body %}
+    
     {% endblock  %}
 
 </body>
