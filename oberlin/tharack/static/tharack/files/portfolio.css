@@ -53,3 +53,29 @@ img:hover{
     height: 10px;
     transition: 5.30s;
 }
+
+
+@media screen and (max-width: 800px) {
+    .project{
+        position: relative;
+        padding: 10px 10px 20px 20px;
+        background-color: rgb(16, 10, 33);
+        width: 20%;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width: 40px) {
+    body{
+        font-size: 10px;
+        
+    }
+    .project{
+        position: relative;
+        display: grid;
+        padding: 10px 10px 20px 20px;
+        background-color: rgb(16, 10, 33);
+        width: 20%;
+        border-radius: 5px;
+    }
+}

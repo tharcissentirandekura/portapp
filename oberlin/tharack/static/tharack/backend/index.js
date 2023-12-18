@@ -1,4 +1,7 @@
-function change() {
+
+
+
+function change(){
     document.querySelector("#backs").onclick = () => {
 
       if (document.querySelector("body").style.backgroundColor === "white") {
@@ -10,10 +13,10 @@ function change() {
         document.querySelector("body").style.color = "black";
         document.querySelector(".nav-bar").style.color = "white";
       }
-    };
+    }
   }
-  
-  function toggles() {
+
+function toggles() {
     let state = document.querySelector(".nav-bar");
     let positioning = document.querySelector(".menue");
     document.querySelector("#show").onclick = () => {
@@ -25,13 +28,11 @@ function change() {
         positioning.style.bottom = "70px";
 
   
-        state.style.display.scrollBehavior = "smooth";
       } else {
         state.style.display = "none";
         positioning.style.display = "block";
-        // positioning.style.fontSize = "x-large";
-
-      }
-    };
-  }
   
+      }
+    }
+  }
+
