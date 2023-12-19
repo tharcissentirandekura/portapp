@@ -2,16 +2,31 @@
 
 
 function change(){
+
+  let nodelist = document.querySelectorAll('*');
     document.querySelector("#backs").onclick = () => {
 
       if (document.querySelector("body").style.backgroundColor === "white") {
         // change color and background color of the body
-        document.querySelector("body").style.backgroundColor = "black";
-        document.querySelector("body").style.color = "white";
+        // document.querySelector("body").style.backgroundColor = "black";
+        // document.querySelector(".about-me").style.backgroundColor = "black";
+        // document.querySelector(".contact-bar").style.backgroundColor = "blue";
+
+        for(let i = 0;i < nodelist.length;i ++){
+          nodelist[i].style.backgroundColor = 'black';
+          nodelist[i].style.color = 'white';
+  
+        }
+
       } else {
-        document.querySelector("body").style.backgroundColor = "white";
-        document.querySelector("body").style.color = "black";
-        document.querySelector(".nav-bar").style.color = "white";
+        // document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector(".nav-bar").style.backgroundColor = "white";
+        for(let i = 0;i < nodelist.length;i ++){
+          nodelist[i].style.backgroundColor = 'white';
+          nodelist[i].style.color = 'black';
+
+        }
+
       }
     }
   }
@@ -24,8 +39,7 @@ function toggles() {
 
       if (state.style.display === "none") {
         state.style.display = "block";
-        positioning.style.position = "relative";
-        positioning.style.bottom = "70px";
+        
 
   
       } else {

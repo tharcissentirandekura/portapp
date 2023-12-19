@@ -87,6 +87,32 @@ h4{
     height: 50px;
 
 }
+@media screen and (max-width: 800px) {
 
+    .contact_bar{
+        position : relative;
+        display: flex;
+        flex-direction: column;
+        background-color : rgb(64, 98, 98);
+        width: 90%;
+        height: 90vh;
+    }
+    .contact_bar .message{
+        position: relative;
+        width: 90%;   
+    }
+    .message{
+        position: relative;
+        background-color:rgb(19, 74, 176);
+        min-width: none;
+        height: 90vh;
+        width: 90%;
+        
+    }
+    .comment{
+        position: relative;
+        width: 90%;
+        }
+}
 
 

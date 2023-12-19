@@ -42,12 +42,6 @@ a{
   color: white;
 }
 
-a:hover{
-    color : aqua;
-    font-size : 27px;
-    transition : .7s;
-}
-
 
 @media screen and (max-width :800px) {
     .body{
@@ -63,9 +57,13 @@ a:hover{
         position : relative;
         top : 2em;
     }
+    .follow:hover{
+        font-size : 26px;
+        transition : .2s;
+        text-decoration : underscore;
+    }
 
     img{
-
         position:relative;
         top: 2em;
         border-radius: 14em;
