@@ -2,22 +2,18 @@
 {% load static %}
 
 {% block body %}
+
 <link rel="stylesheet" href="{% static 'tharack/files/about.css' %}">
     <section class="identify">
         <div class="biography">
             <img src="{% static 'tharack/images/myimage.jpeg' %}">
             <p class="about-me">
-                I'm Tharcisse Ntirandekura, a software engineer and programmer. With a strong background in coding and a passion for creating high-quality software solutions, I am dedicated to delivering exceptional results.
-            I specialize in web development, mobile app development, or data analysis. Through my experience, I have developed a deep understanding of various programming languages, including  Python, JavaScript, or Java.
+                I'm <span>Tharcisse Ntirandekura</span>, a software engineer and programmer. I have a strong background in coding and a passion for creating high-quality software solutions; I am dedicated to delivering exceptional results using computer science skills.
+            I can help in<span>web development, software design and implementaion</span> , and also data analysis. Through my experience, I have developed a deep understanding of various programming languages, including  <span class="language">Python, JavaScript, and Java.</span> I have worked on scripting with python where I developped a file handling software.
+            As my hobby, I develop games to improve my design skills and I am eager to learning new skills always!
             </p>
         </div>
-        <div class="hobby">
-            <img src="{% static 'tharack/images/myimage.jpeg' %}">
-   
-        </div>
+        <script src="{% static 'tharack/backend/index.js' %}"></script>
     </section>
-
-
-    <!-- <img src="{% static 'portfolio/images/background.jpeg' %}"> -->
 
 {% endblock body %}

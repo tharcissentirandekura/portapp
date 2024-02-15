@@ -3,10 +3,11 @@
 {%load static%}
 {% block body %}
     <link rel="stylesheet" href="{% static 'tharack/files/home.css' %}">
+    <script src="{% static 'tharack/backend/index.js' %}"></script>
     <section class="identify">
         <div>
-            <h1>My name is Tharcisse</h1>
-            <h2></h2>
+            <h1>Hi, I am Tharcisse Ntirandekura</h1>
+            <h2>A Software Engineer</h2>
         </div>
         <div class="image">
             <img src="{% static 'tharack/images/myimage.jpeg' %}">
@@ -14,17 +15,14 @@
     </section>
 
     <section class="follow">
-        <span class="fa fa-facebook"></span>
-        <span class="fa fa-instagram"></span>
-        <span class="fa fa-github"></span>
-        <span class="fa fa-linkedin"></span>
+
+        <a class="link" href="https://github.com/tharcissentirandekura" target="_blank"><i class="fa fa-github"></i></a>
+        <a class="link" href="https://www.linkedin.com/in/tharcisse-ntirandekura" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class ="link" href="mailto:tntirand@oberlin.edu" target="_blank"><i class="fa fa-envelope-o"></i></a>
+        <a class ="link" href="https://www.instagram.com/_tharack/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a class ="link" href="https://www.facebook/com" target="_blank"><i class="fa fa-facebook"></i></a>
+
     </section>
 
-    <style>
-        .follow{
-            position: absolute;
-            bottom: 40%;
-            left: 10%;
-        }
-    </style>
+
 {% endblock body %}

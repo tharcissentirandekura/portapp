@@ -1,0 +1,14 @@
+
+{% extends "tharack/layout.html" %}
+{%load static%}
+{% block body %}
+    <link rel="stylesheet" href="{% static 'tharack/files/resume.css' %}">
+    <section class="resume">
+        <img src="{{ qrcode.image.url }}">
+        <p>hello</p>
+        <h>
+Welcome to my resume webpage
+        </h>
+    </section>
+
+{% endblock body %}
