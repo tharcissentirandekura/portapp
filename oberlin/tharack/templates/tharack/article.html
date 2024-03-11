@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'tharack/files/collatz.css'%}">
+
+    <title>The Collatz Conjecture: Exploring the Mysteries of Number Sequences</title>
+</head>
+<body>
+    <div class="collatz-article">
+        <article class="article">
+            <h1 calss="head">The Collatz Conjecture: Exploring the Mysteries of Number Sequences
+
+            </h1>
+
+            <p class="abstract">
+                The Collatz conjecture, or the 3x+1 problem, is a fascinating, unsolved puzzle that has intrigued mathematicians for decades. This conjecture poses a simple question: Does repeatedly applying two arithmetic operations to a positive integer always lead to the number 1? This paper delves into the history, statement, and empirical data surrounding the Collatz conjecture. We also explore the significance of this problem in mathematics and discuss the challenges it presents to current mathematical knowledge.
+            </p>
+
+            <h2>1. Introduction</h2>
+            <p>
+                The Collatz conjecture, named after mathematician Lothar Collatz, was introduced in 1937 and remains one of the most famous unsolved problems in mathematics <a href="#1">[1]</a>. This conjecture revolves around sequences of integers obtained by applying two operations: dividing even numbers by two, multiplying odd numbers by 3, and adding 1. The question is whether all positive integers eventually converge to 1 through this process.
+            </p>
+
+            <h2>2. Statement of the Problem</h2>
+            <p>
+                The Collatz conjecture can be stated as follows: Starting with any positive
+                integer, repeatedly apply the operations of dividing even numbers by 2,
+                multiplying odd numbers by 3, and adding 1. Will this process always reach
+                the number 1, regardless of the initial integer chosen? If the conjecture is
+                false, it implies the existence of a sequence that either enters a repeating cycle excluding 1 or increases without bound <a href="#1">[1]</a>.
+            </p>
+
+            <h2>3. Empirical Data</h2>
+            <p>
+                Extensive empirical data has been collected to investigate the behavior of the Collatz sequence for various starting integers. While no counterexamples have been found, the sequence exhibits intriguing patterns and complexities. For example, the sequence for the starting integer 27 takes 111 steps to reach 1, climbing as high as 9232 before descending <a href="#1">[1]</a>. Specific starting values that yield longer stopping times than any smaller starting value have also been identified <a href="#1">[1]</a>.
+            </p>
+
+            <h2>4. Significance and Challenges</h2>
+            <p>
+                The Collatz conjecture presents significant challenges to mathematics. Despite its deceptively simple formulation, it has proven to be a complicated problem, currently beyond the reach of present-day mathematics <a href="#1">[1]</a>. The conjecture's resolution would require new insights and techniques, potentially leading to advancements in number theory and related areas.
+            </p>
+
+            <h2>5. Conclusion</h2>
+            <p>
+                The Collatz conjecture continues to captivate mathematicians worldwide. Its simplicity and elusive nature have made it a subject of fascination and research for decades. While progress has been made in understanding the behavior of the Collatz sequence, a complete proof or disproof of the conjecture remains to be discovered. Further exploration and investigation are needed to illuminate this intriguing mathematical puzzle.
+            </p>
+
+            <h2>Sources</h2>
+            <ul>
+                <li><a id='1' href="https://en.wikipedia.org/wiki/Collatz_conjecture" target="_blank">Wikipedia</a></li>
+                <li><a href="https://mathworld.wolfram.com/CollatzProblem.html" target="_blank">MathWorld</a></li>
+                <li><a href="https://science.howstuffworks.com/math-concepts/collatz-conjecture.htm" target="_blank">HowStuffWorks</a></li>
+            </ul>
+        </article>
+
+    </div>
+
+</body>
+</html>

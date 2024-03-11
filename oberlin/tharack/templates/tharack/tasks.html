@@ -1,0 +1,65 @@
+
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'tharack/files/tasks.css'%}">
+    <title>Tasks Tracker</title>
+
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="task">Task:</label>
+        <input type="text" id="task" name="title" required>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="startTime">Start Time:</label>
+        <input type="time" id="startTime" name="startTime" required>
+
+        <label for="duration">Duration:</label>
+        <input type="number" id="duration" name="duration" required>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <!--<div class="tasks">-->
+    <!--    {%for task in tasks%}-->
+    <!--    <h>Task title : {{task.title}}  ------------ > {{task.description}}</h>-->
+    <!--    {%endfor%}-->
+
+    <!--</div>-->
+
+    <section class="tasks">
+        <h1>Tasks To complete</h1>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Completed</th>
+                </tr>
+
+                {% for task in tasks %}
+                    <tr>
+                        <td>{{ task.id}}</td>
+                        <td>{{ task.title }}</td>
+                        <td>{{ task.description }}</td>
+                        <td>{{task.completed}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+
+    </section>
+</body>
+</html>
