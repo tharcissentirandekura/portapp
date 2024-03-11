@@ -1,27 +1,15 @@
 body{
     font-size: 18px;
 
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 }
 .intro,.footer{
     position: relative;
     display: grid;
     justify-content: center;
     align-self: center;
-<<<<<<< HEAD
 
 }
 .welcome{
-=======
-    
-}
-h1{
-    
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
     text-shadow: rgb(0, 204, 255) 2px 5px;
     text-decoration: dashed;
     color: white;
@@ -29,11 +17,6 @@ h1{
 .project{
     margin-left: 5%;
     margin-right: 5%;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 }
 .project p{
     position: relative;
@@ -70,7 +53,6 @@ img:hover{
 
 
 @media screen and (max-width: 800px) {
-<<<<<<< HEAD
     .welcome{
         position:relative;
         margin-bottom: 100px;
@@ -102,28 +84,3 @@ img:hover{
     }
 
 }
-=======
-    .project{
-        position: relative;
-        padding: 10px 10px 20px 20px;
-        background-color: rgb(16, 10, 33);
-        width: 20%;
-        border-radius: 5px;
-    }
-}
-
-@media screen and (min-width: 40px) {
-    body{
-        font-size: 10px;
-        
-    }
-    .project{
-        position: relative;
-        display: grid;
-        padding: 10px 10px 20px 20px;
-        background-color: rgb(16, 10, 33);
-        width: 20%;
-        border-radius: 5px;
-    }
-}
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e

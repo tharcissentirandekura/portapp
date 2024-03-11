@@ -1,7 +1,6 @@
 body{
     font-size: 18px;
 
-
 }
 .intro,.footer{
     position: relative;
@@ -18,7 +17,6 @@ body{
 .project{
     margin-left: 5%;
     margin-right: 5%;
-
 }
 .project p{
     position: relative;

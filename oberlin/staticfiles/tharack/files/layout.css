@@ -36,7 +36,8 @@ body {
   }
   h1 {
     position: relative;
-    font-size: 40px;
+    font-size: 17px;
+    top: 3em;
     justify-content: center;
     color: rgb(224, 228, 220);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -44,7 +45,7 @@ body {
   }
   h2 {
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     justify-content: center;
     color: rgb(208, 107, 11);
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

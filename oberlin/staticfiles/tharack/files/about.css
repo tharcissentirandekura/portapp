@@ -1,6 +1,3 @@
-body{
-
-}
 
 .identify .hobby{
     display: grid;
@@ -62,6 +59,10 @@ body{
     top: 6em;
 
 
+.identity {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
 
 }
 

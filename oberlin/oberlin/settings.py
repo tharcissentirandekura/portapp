@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-jxsr!#v_u#$o7&^6vmn#j_j(08mh8i2m^#s0red$!hruq@!@yh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Tharack.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,7 +123,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "tharack/static"),
 ]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"

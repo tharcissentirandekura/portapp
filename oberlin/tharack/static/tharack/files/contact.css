@@ -4,15 +4,9 @@
     flex-direction:row ;
     position: relative;
     background-color: rgb(20, 25, 35);
-<<<<<<< HEAD
     top: 2em;
     width: 60%;
     margin-left: 15%;
-=======
-    top: 10em;
-    width: 60%;
-    margin-left: 20%;
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
     margin-right: 15%;
     height: 50vh;
     border-radius: 10px;
@@ -24,14 +18,7 @@
     color:coral;
     font-style: italic;
     display: grid;
-<<<<<<< HEAD
     font-size:20px;
-=======
-    font-size: 18px;
-
-
-    
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 
 }
 h4{
@@ -40,7 +27,6 @@ h4{
 
 .message{
     position: inherit;
-<<<<<<< HEAD
     background-color:rgb(85 88 19);
     min-width: 40%;
     border-top-right-radius: 10px;
@@ -49,20 +35,6 @@ h4{
     padding: 14px;
     width: 60%;
 
-=======
-    background-color: rgb(13, 43, 103);
-    min-width: 40%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    left: 15%;
-    padding: 14px;
-    width: 60%;
-    
-    
-    
-    
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 }
 .email{
     font-size: 24px;
@@ -73,11 +45,7 @@ h4{
     padding: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-<<<<<<< HEAD
     width: 84%;
-=======
-    width: 80%;
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
     height: 30px;
 
 }
@@ -102,7 +70,6 @@ h4{
 .btn{
     position: absolute;
     display: grid;
-<<<<<<< HEAD
     background-color:rgb(102, 16, 181);
     font-size: 24px;
     width: 40%;
@@ -122,23 +89,10 @@ h4{
 
 }
 
-=======
-    justify-content: center;
-    align-self: center;
-    background-color:rgb(102, 16, 181);
-    font-size: 24px;
-    border: 3px;
-    top: 13em;
-    width: 30%;
-    height: 50px;
-
-}
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 @media screen and (max-width: 800px) {
 
     .contact_bar{
         position : relative;
-<<<<<<< HEAD
         display: grid;
         background-color : rgb(64, 98, 98);
         margin-left: 5%;
@@ -176,30 +130,6 @@ h4{
         position:absolute;
         left:3.5 em;
     }
-=======
-        display: flex;
-        flex-direction: column;
-        background-color : rgb(64, 98, 98);
-        width: 90%;
-        height: 90vh;
-    }
-    .contact_bar .message{
-        position: relative;
-        width: 90%;   
-    }
-    .message{
-        position: relative;
-        background-color:rgb(19, 74, 176);
-        min-width: none;
-        height: 90vh;
-        width: 90%;
-        
-    }
-    .comment{
-        position: relative;
-        width: 90%;
-        }
->>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 }
 
 
