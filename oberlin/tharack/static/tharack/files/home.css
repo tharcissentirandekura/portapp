@@ -33,8 +33,13 @@ img{
 }
 
 .follow:hover{
+<<<<<<< HEAD
     font-size : 26px;
     transition : .1s;
+=======
+    font-size : 56px;
+    transition : .5s;
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
     text-decoration : underscore;
 }
 
@@ -42,12 +47,15 @@ a{
   color: white;
 }
 
+<<<<<<< HEAD
 a:hover{
     color : aqua;
     font-size : 20px;
     transition : .2s;
 }
 
+=======
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 
 @media screen and (max-width :800px) {
     .body{
@@ -63,6 +71,7 @@ a:hover{
         position : relative;
         top : 2em;
     }
+<<<<<<< HEAD
     a:hover{
     color : aqua;
     font-size : 18px;
@@ -71,6 +80,15 @@ a:hover{
 
     img{
 
+=======
+    .follow:hover{
+        font-size : 26px;
+        transition : .2s;
+        text-decoration : underscore;
+    }
+
+    img{
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
         position:relative;
         top: 2em;
         border-radius: 14em;
@@ -112,7 +130,10 @@ a:hover{
         justify-content : center;
         align-items : center;
         border-radius: 2em;
+<<<<<<< HEAD
         color :;
+=======
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
         border-style : solid;
         height : 40em;
         width :35em;
@@ -122,6 +143,9 @@ a:hover{
 
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 }
 

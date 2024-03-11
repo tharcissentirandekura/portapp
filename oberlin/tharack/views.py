@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_protect
 
+=======
+from django.shortcuts import render,redirect
+import segno
+from .models import qrcode
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 
 def home(request):
     return render(request,"tharack/home.html")
@@ -12,6 +18,7 @@ def contact(request):
 def portfolio(request):
     return render(request,"tharack/portfolio.html")
 def resume(request):
+<<<<<<< HEAD
 
     return render(request, 'tharack/resume.html')
 
@@ -66,3 +73,23 @@ def graph(request):
         print("it is not recognized as post")
         return render(request,"tharack/graph.html")
 
+=======
+    if request.method == 'POST':
+        data = request.POST['data']
+
+        # Generate QR code
+        qr = segno.make(data)
+
+        # Save QR code image to model
+        code = qrcode(data=data)
+        qr.save(code.image.path, kind='png')
+        code.save()
+        print(code)
+        # Redirect to QR code detail page
+        return redirect('qrcode_detail', pk=code.pk)
+
+    return render(request, 'tharack/resume.html')
+
+    
+    
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e

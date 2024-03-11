@@ -22,20 +22,38 @@
 <body>
     <section class="nav-bar">
         <ul>
+<<<<<<< HEAD
         <li class="home"><a href="{% url 'tharack:home' %}">Home</a></li>
         <li class="about"><a href="{% url 'tharack:about' %}">About</a></li>
         <li id="portfolio"><a href="{% url 'tharack:portfolio' %}">Porfolio</a></li>
         <li id="contact"><a href="{% url 'tharack:contact' %}">Contact</a></li>
         <li id="contact"><a href="{% url 'tharack:graph' %}">Collatz</a></li>
+=======
+        <li class="home"><a href="{% url 'tharack:home' %}">home</a></li>
+        <li class="about"><a href="{% url 'tharack:about' %}">about</a></li>
+        <li id="portfolio"><a href="{% url 'tharack:portfolio' %}">porfolio</a></li>
+        <li id="resume"><a href="">resume</a></li>
+        <li id="contact"><a href="{% url 'tharack:contact' %}">contact</a></li>        
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
         </ul>
     </section>
 
     <div class="menue">
+<<<<<<< HEAD
         <span id='show' onclick="toggles()" class="fa fa-bars"></i>"></span>
         <span id="backs" onclick="change()" class="fa fa-sun-o"></span>
     </div>
 
     {% block body %}
+=======
+        <span id='show' onclick="toggles()" class="fa fa-bars"></span>
+        <span id="backs" onclick="change()" class="fa fa-toggle-on"></span>
+        <span class="fa fa-sun-o"></span>
+    </div>
+
+    {% block body %}
+
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
     {% endblock  %}
 
 </body>

@@ -1,6 +1,3 @@
-body{
-
-}
 
 .identify .hobby{
     display: grid;
@@ -9,7 +6,11 @@ body{
 
 .biography{
     position: relative;
+<<<<<<< HEAD
     font-size: 26px;
+=======
+    font-size: 18px;
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
     background-color:rgb(15, 2, 2);
     color: rgb(117, 123, 124);
     widows: 40%;
@@ -23,7 +24,11 @@ body{
     float: left;
     border-style: solid;
     /* border-color: aqua; */
+<<<<<<< HEAD
     border-radius: 15px;
+=======
+    border-radius: 2em;
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 }
 .about-me{
     position: relative;
@@ -61,16 +66,42 @@ body{
     align-items:center;
     top: 6em;
 
+<<<<<<< HEAD
+=======
 
 
 }
 
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 
 .identity {
   float: left;
   width: 60%; /* The width is 60%, by default */
 }
 
+<<<<<<< HEAD
+}
+
+=======
+@media screen and (max-width :800px) {
+  .biography img {
+    right : 20%;
+    position :relative;
+    height : 40%;
+    width : 40%
+    }
+    .about-me{
+     position : relative;
+     font-size: 18px;
+    }
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
+
+.identity {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+<<<<<<< HEAD
 @media screen and (max-width :800px) {
   .biography img {
     right : 20%;
@@ -84,6 +115,8 @@ body{
     }
 }
 
+=======
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
 @media screen and (min-width :800px) {
     .identify{
         display: grid;
@@ -105,13 +138,21 @@ body{
     }
     .about-me{
         position : relative;
+<<<<<<< HEAD
         /*font-size: 26px;*/
+=======
+        font-size: 26px;
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
         color: white;
         font-family: 'Times New Roman', Times, serif;
     }
     span{
         color: rgb(0, 157, 255);
+<<<<<<< HEAD
         /*font-size: 27px;*/
+=======
+        font-size: 27px;
+>>>>>>> 249352a1b7009db18fdc27056b030713ccf3ff5e
     }
     .language{
         color: rgb(43, 226, 116);
