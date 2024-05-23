@@ -6,20 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'tharack/files/graph.css' %}">
+    <script src="{% static 'tharack/backend/index.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
     <title>Graph</title>
 </head>
 <body>
 
-    <div class="contact">
-        <header class='header'>
-            <h>Contact me for feedback on UI/UX</h>
-            <h>At tntirand@oberlin.edu</h>
-            <button class ="mail"><a href="mailto:tntirand@oberlin.edu">Email me</a></button>
-        </header>
+<nav>
+    <div class="header">
+        <h1>Collatz sequence visualization website</h1>
     </div>
-
-
+</nav>
 
     <section class="middle-page">
         <h>  {{username}}</h>
@@ -67,7 +64,8 @@
                                     display: true
                                 }
                             }
-                        });
+                        }
+                    );
                     </script>
                 </h1>
 
@@ -127,12 +125,12 @@
 
         </div>
 
-    <section class="sequene-list">
-        <div class="lists">
-            <p>{{length}}</p>
-            <p>{{lists}}</p>
-        </div>
-    </section>
+        <section class="sequene-list">
+            <div class="lists">
+                <p>{{length}}</p>
+                <p>{{lists}}</p>
+            </div>
+        </section>
 
     </section>
 
@@ -143,7 +141,7 @@
     </section>
 
 
-    <section class="explanation">
+    <section class=" explanation">
         <div class="collatz">
             <p>
                 {{info}}
@@ -151,15 +149,19 @@
         </div>
 
         <div class="demo">
-            <img src="{% static 'tharack/images/demo.jpg' %}">
-        </div>
-
-        <div class="longest-num">
-            <div class="list">
+            <h>Collatz sequence visualization</h>
+            <div class="description">
                 <p>
-                   {{sequence_length}}
+                    The Collatz conjecture is a conjecture in mathematics that concerns a 
+                    sequence defined as follows: start with any positive integer n. 
+                    Then each term is obtained from the previous term as follows: 
+                    if the previous term is even, the next term is one half of the previous term. If the previous term is odd, the next term is 3 times the previous term plus 1. The conjecture is that no matter what value of n, the sequence will always eventually reach 1.
                 </p>
             </div>
+
+            <div class="demo-image">
+                <button id="code-snipet" onclick="showImage()"> Click to view code</button>
+                <img id='image' src="{% static 'tharack/images/demo.jpg' %}">
         </div>
 
     </section>

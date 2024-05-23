@@ -1,19 +1,19 @@
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_protect # type: ignore
 
 
-def home(request):
-    return render(request,"tharack/home.html")
-def about(request):
-    return render(request,"tharack/about.html")
-def contact(request):
-    return render(request,"tharack/contact.html")
+# def home(request):
+#     return render(request,"tharack/home.html")
+# def about(request):
+#     return render(request,"tharack/about.html")
+# def contact(request):
+#     return render(request,"tharack/contact.html")
 
-def portfolio(request):
-    return render(request,"tharack/portfolio.html")
-def resume(request):
+# def portfolio(request):
+#     return render(request,"tharack/portfolio.html")
+# def resume(request):
 
-    return render(request, 'tharack/resume.html')
+#     return render(request, 'tharack/resume.html')
 
 def collatz(number):
     sequence = [number]
@@ -63,6 +63,6 @@ def graph(request):
             return render(request,"tharack/graph.html")
 
     else:
-        print("it is not recognized as post")
+        # print("it is not recognized as post")
         return render(request,"tharack/graph.html")
 
