@@ -6,19 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="{% url 'tharack:login' %}">
+    <form action="" method="post">
         {% csrf_token %}
-        <div>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div>
-            <input type="submit" value="Login">
-        </div>
+        <input type="text" name="username" id="username" placeholder="username">
+        <input type="password" name="password" id="password" placeholder="password">
+        <input type="submit" value="Login">
     </form>
 </body>
 </html>

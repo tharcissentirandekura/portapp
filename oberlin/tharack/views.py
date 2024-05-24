@@ -8,14 +8,8 @@ def login(request):
     return render(request,"tharack/login.html")
 
 def signup(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = User.objects.create_user(username="tharcisse", password="Ntirandekura")
-        user.save()
-        return redirect('login')  # replace 'login' with the name of your login view
-    else:
-        return render(request, 'tharack/signup.html')
+
+    return render(request, 'tharack/signup.html')
     
 def collatz(number):
     sequence = [number]
