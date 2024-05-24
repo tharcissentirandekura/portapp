@@ -291,8 +291,27 @@ h1,h2,h3{
     font-size: 22px;
 }
 
+@media screen and (max-width: 768px) {
+    /* Add your responsive styles here */
+    /* For example, you can modify the layout or font sizes for smaller screens */
+    .middle-page {
+        width: 100%;
+        margin: 8;
 
-.list{
+    }
 
+    .explanation {
+        padding-top: 8%;
+        width: 100%;
+        margin: 8;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+        margin: 8;
+    }
 }
+
+
 

@@ -1,20 +1,22 @@
-from django.shortcuts import render
-from django.views.decorators.csrf import csrf_protect # type: ignore
+
+from django.shortcuts import render,redirect # type: ignore
+from django.contrib.auth.models import User # type: ignore
+from .models import *
 
 
-# def home(request):
-#     return render(request,"tharack/home.html")
-# def about(request):
-#     return render(request,"tharack/about.html")
-# def contact(request):
-#     return render(request,"tharack/contact.html")
+def login(request):
+    return render(request,"tharack/login.html")
 
-# def portfolio(request):
-#     return render(request,"tharack/portfolio.html")
-# def resume(request):
-
-#     return render(request, 'tharack/resume.html')
-
+def signup(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = User.objects.create_user(username="tharcisse", password="Ntirandekura")
+        user.save()
+        return redirect('login')  # replace 'login' with the name of your login view
+    else:
+        return render(request, 'tharack/signup.html')
+    
 def collatz(number):
     sequence = [number]
 
