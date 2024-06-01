@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jxsr!#v_u#$o7&^6vmn#j_j(08mh8i2m^#s0red$!hruq@!@yh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tharack'
+    'tharack',
+    'api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
